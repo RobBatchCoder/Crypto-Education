@@ -1,6 +1,15 @@
-.hero-image{
+/*-----------------------------Imports------------------------------*/
+@import url('https://fonts.cdnfonts.com/css/open-sans');
+@import url('https://fonts.cdnfonts.com/css/waredosk');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+
+/*-----------------------------Images------------------------------*/
+.hero-image {
     background: url("/assets/images/hero-image.jpeg.jpeg");
-    height: 33vh;
+    height: 40vh;
     background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,10 +17,62 @@
 }
 
 
+/*-----------------------------Navbar------------------------------*/
+
+.navbar {
+    height: 12vh;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+}
+
+/*Reduce fontsize for smaller screens*/
+@media screen and (max-width: 600px) {
+    .navbar-brand {
+        font-size: large;
+    }
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.navbar li a {
+    text-align: right;
+}
 
 
 
+/*-----------------------------Fonts------------------------------*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-family: 'open-sans', sans-serif;
+
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
 
 
+/*--------------------------------Headings---------------------------------*/
+
+.section-heading{
+    margin: 25px 5px 10px 10px;
+}
 
 
+/*-----------------------------General layout------------------------------*/
+
+
+p {
+    margin: 20px;
+}
